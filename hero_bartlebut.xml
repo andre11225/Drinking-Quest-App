@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+
+    <!-- Hero Name -->
+    <TextView
+        android:text="@string/bartlebut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:textSize="40sp"
+        android:textStyle="normal|bold"
+        android:id="@+id/heroName"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/goldX"
+        android:layout_alignStart="@+id/goldX"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp" />
+
+
+    <!-- Gold -->
+    <TextView
+        android:text="@string/gold"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="110dp"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:layout_marginStart="71dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/goldX" />
+
+            <EditText
+                android:inputType="number"
+                android:background="#ffffff"
+                android:textColor="#000000"
+                android:textStyle="normal|bold"
+                android:textAlignment="center"
+                android:layout_below="@+id/goldX"
+                android:layout_alignLeft="@+id/goldX"
+                android:layout_alignStart="@+id/goldX"
+                android:layout_marginBottom="20dp"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:id="@+id/gold1" />
+
+
+    <!-- XP -->
+    <TextView
+        android:text="@string/xp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:layout_alignTop="@+id/goldX"
+        android:layout_toRightOf="@+id/goldX"
+        android:layout_toEndOf="@+id/goldX"
+        android:id="@+id/xpX" />
+
+            <EditText
+                android:inputType="number"
+                android:background="#ffffff"
+                android:textColor="#000000"
+                android:textStyle="normal|bold"
+                android:textAlignment="center"
+                android:layout_below="@+id/xpX"
+                android:layout_alignLeft="@+id/xpX"
+                android:layout_alignStart="@+id/xpX"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:id="@+id/xp1" />
+
+
+    <!-- Max HP -->
+    <TextView
+        android:text="@string/maxhp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:layout_below="@+id/gold1"
+        android:layout_alignLeft="@+id/gold1"
+        android:layout_alignStart="@+id/gold1"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/maxhpX" />
+
+            <EditText
+                android:inputType="number"
+                android:text="9"
+                android:background="#ffffff"
+                android:textColor="#000000"
+                android:textStyle="normal|bold"
+                android:textAlignment="center"
+                android:layout_below="@+id/maxhpX"
+                android:layout_alignLeft="@+id/maxhpX"
+                android:layout_alignStart="@+id/maxhpX"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:id="@+id/maxhp1" />
+
+
+    <!-- Current HP -->
+    <TextView
+        android:text="@string/current"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:layout_alignTop="@+id/maxhpX"
+        android:layout_toRightOf="@+id/maxhpX"
+        android:layout_toEndOf="@+id/maxhpX"
+        android:id="@+id/currentX" />
+
+            <EditText
+                android:inputType="number"
+                android:text="9"
+                android:background="#ffffff"
+                android:textColor="#000000"
+                android:textStyle="normal|bold"
+                android:textAlignment="center"
+                android:layout_below="@+id/currentX"
+                android:layout_alignLeft="@+id/currentX"
+                android:layout_alignStart="@+id/currentX"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:id="@+id/current1" />
+
+
+    <!-- Attack -->
+    <TextView
+        android:text="@string/attack"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingTop="10dp"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:id="@+id/attackX" />
+
+            <EditText
+                android:inputType="text"
+                android:text="D6"
+                android:background="#fff"
+                android:textColor="#000000"
+                android:textStyle="normal|bold"
+                android:textAlignment="center"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@+id/attackX"
+                android:layout_toRightOf="@+id/attackX"
+                android:layout_toEndOf="@+id/attackX"
+                android:id="@+id/attack1" />
+
+
+    <!-- Defense-->
+    <TextView
+        android:text="@string/defense"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/attackX"
+        android:layout_alignLeft="@+id/attackX"
+        android:layout_alignStart="@+id/attackX"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingTop="10dp"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:id="@+id/defenseX" />
+
+            <EditText
+                android:inputType="number"
+                android:text="0"
+                android:background="#fff"
+                android:textColor="#000000"
+                android:textStyle="normal|bold"
+                android:textAlignment="center"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@+id/defenseX"
+                android:layout_toRightOf="@+id/defenseX"
+                android:layout_toEndOf="@+id/defenseX"
+                android:id="@+id/defense1" />
+
+
+    <!-- Self Worth -->
+    <TextView
+        android:text="@string/self"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/defenseX"
+        android:layout_alignLeft="@+id/defenseX"
+        android:layout_alignStart="@+id/defenseX"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingTop="10dp"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:id="@+id/selfworthX" />
+
+            <EditText
+                android:inputType="number"
+                android:text="12"
+                android:background="#fff"
+                android:textColor="#000000"
+                android:textStyle="normal|bold"
+                android:textAlignment="center"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@+id/selfworthX"
+                android:layout_toRightOf="@+id/selfworthX"
+                android:layout_toEndOf="@+id/selfworthX"
+                android:id="@+id/selfworth1" />
+
+    <!-- Smarts -->
+    <TextView
+        android:text="@string/smarts"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/selfworthX"
+        android:layout_alignLeft="@+id/selfworthX"
+        android:layout_alignStart="@+id/selfworthX"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingTop="10dp"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:id="@+id/smartsX" />
+
+            <EditText
+                android:inputType="number"
+                android:text="9"
+                android:background="#fff"
+                android:textColor="#000000"
+                android:textStyle="normal|bold"
+                android:textAlignment="center"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@+id/smartsX"
+                android:layout_toRightOf="@+id/smartsX"
+                android:layout_toEndOf="@+id/smartsX"
+                android:id="@+id/smarts1" />
+
+
+    <!-- Tolerance -->
+    <TextView
+        android:text="@string/tolerance"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/smartsX"
+        android:layout_alignLeft="@+id/smartsX"
+        android:layout_alignStart="@+id/smartsX"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingTop="10dp"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:id="@+id/toleranceX" />
+
+            <EditText
+                android:inputType="number"
+                android:text="9"
+                android:background="#fff"
+                android:textColor="#000000"
+                android:textStyle="normal|bold"
+                android:textAlignment="center"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@+id/toleranceX"
+                android:layout_toRightOf="@+id/toleranceX"
+                android:layout_toEndOf="@+id/toleranceX"
+                android:id="@+id/tolerance1" />
+
+
+    <!-- Sexual Prowness -->
+    <TextView
+        android:text="@string/sexual"
+        android:layout_height="40dp"
+        android:layout_below="@+id/toleranceX"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingTop="10dp"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        android:id="@+id/sexualX"
+        android:layout_width="145dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp" />
+
+            <EditText
+                android:inputType="number"
+                android:text="7"
+                android:background="#fff"
+                android:textColor="#000000"
+                android:textStyle="normal|bold"
+                android:textAlignment="center"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:id="@+id/sexual1"
+                android:layout_below="@+id/tolerance1"
+                android:layout_alignStart="@+id/tolerance1"
+                android:layout_alignLeft="@+id/tolerance1"
+                android:layout_marginTop="20dp" />
+
+
+    </RelativeLayout>
+</ScrollView>

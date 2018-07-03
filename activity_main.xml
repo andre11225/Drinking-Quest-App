@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.andvilcreations.drinkingquestcompanionapp.MainActivity">
+
+
+    <Button
+        android:id="@+id/buttonBartlebut"
+        android:text="@string/bartlebut"
+        android:background="@color/colorAccent"
+        android:onClick="onClick"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/buttonChuglox"
+        android:layout_alignLeft="@+id/buttonChuglox"
+        android:layout_alignStart="@+id/buttonChuglox"
+        android:layout_width="130dp"
+        android:layout_height="60dp" />
+
+    <Button
+        android:text="@string/daiquirin"
+        android:background="@color/colorAccent"
+        android:id="@+id/buttonDaiquirin"
+        android:layout_marginTop="56dp"
+        android:layout_below="@+id/buttonBartlebut"
+        android:layout_alignLeft="@+id/buttonBartlebut"
+        android:layout_alignStart="@+id/buttonBartlebut"
+        android:layout_height="60dp"
+        android:layout_width="130dp"
+        android:onClick="onClick" />
+
+    <Button
+        android:text="@string/annoying"
+        android:background="@color/colorAccent"
+        android:id="@+id/buttonAnnoying"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/buttonDaiquirin"
+        android:layout_alignLeft="@+id/buttonDaiquirin"
+        android:layout_alignStart="@+id/buttonDaiquirin"
+        android:layout_height="60dp"
+        android:layout_width="130dp"
+        android:onClick="onClick" />
+
+    <Button
+        android:text="@string/chuglox"
+        android:background="@color/colorAccent"
+        android:id="@+id/buttonChuglox"
+        android:onClick="onClick"
+        android:layout_marginTop="41dp"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/mainTitle"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="@string/reset"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonReset"
+        android:onClick="newGame"
+        android:layout_marginTop="53dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="@string/title"
+        android:layout_height="90dp"
+        android:id="@+id/mainTitle"
+        android:textSize="33sp"
+        android:layout_width="230dp"
+        android:textAllCaps="false"
+        android:textAlignment="viewStart"
+        android:fontFamily="sans-serif"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
